@@ -255,7 +255,7 @@ class HomePage extends Page {
       mockScale: mockScale,
       mockBoxH: Math.round(520 * mockScale),
       pianoScale: pianoScale,
-      pianoLabel: Math.min(90, Math.round(13 / pianoScale)),
+      pianoLabel: Math.round(Math.max(7, Math.min(13, 13 * contentW / 560)) / pianoScale),
       pianoW: Math.round(1430 * pianoScale),
       pianoH: Math.round(313 * pianoScale),
       doorScale: doorScale,
